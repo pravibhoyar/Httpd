@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-        label {
-		
-		    label "built-in"
-			
-		}
-  }
+  agent any
   stages {
     stage('Deploy to Container-1') {
 	    steps {
