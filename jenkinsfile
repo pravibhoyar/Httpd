@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+        label {
+		
+		    label "slave-1"
+			customWorkspace "/mnt/vol1"
+		}
+  }
   stages {
     stage('Deploy to Container-1') {
 	    steps {
