@@ -3,7 +3,7 @@ pipeline {
         label {
 		
 		    label "built-in"
-			customWorkspace "/mnt/vol1"
+			
 		}
   }
   stages {
